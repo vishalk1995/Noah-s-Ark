@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/noahsark" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:fontFamily="serif-monospace" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_dropshadow"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/txt_user"
+            style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/txt_user"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="#009688" />
+
+        <EditText
+            android:id="@+id/txt_pass"
+            style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/txt_pass"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="#009688" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#4CAF50"
+            android:textColorLink="#4CAF50"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_signup_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/signup_desc"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txt_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/signup"
+                android:textColor="#009688"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

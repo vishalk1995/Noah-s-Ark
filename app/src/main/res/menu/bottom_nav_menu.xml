@@ -8,7 +8,7 @@
 
     <item
         android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/mapbox_compass_icon"
+        android:icon="@drawable/mapicon"
         android:title="@string/title_dashboard" />
 
     <item
@@ -18,7 +18,7 @@
 
     <item
         android:id="@+id/navigation_weather"
-        android:icon="@android:drawable/ic_menu_view"
+        android:icon="@drawable/weathericon"
         android:title="@string/title_weather" />
 
 </menu>

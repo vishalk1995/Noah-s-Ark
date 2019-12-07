@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -83,8 +84,17 @@ public class SignupActivity extends AppCompatActivity {
                                             Toast toast = Toast.makeText(getApplicationContext(), response.getString("message"), Toast.LENGTH_LONG);
                                             toast.show();
                                         }else{
-                                            Intent intent = new Intent(SignupActivity.this, NavigationActivity.class);
-                                            startActivity(intent);
+                                            Toast toast = Toast.makeText(getApplicationContext(), "Signup Successfull! Redirecting to login page.", Toast.LENGTH_LONG);
+                                            toast.show();
+                                            new Handler().postDelayed(new Runnable() {
+                                                @Override
+                                                public void run() {
+
+                                                    Intent intent = new Intent(SignupActivity.this, MainActivity.class);
+                                                    startActivity(intent);
+                                                }
+                                            }, 2000);
+
                                         }
                                     } catch (JSONException e) {
                                         e.printStackTrace();

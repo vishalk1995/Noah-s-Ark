@@ -303,7 +303,7 @@ public class DashboardFragment extends Fragment implements MapboxMap.OnMapClickL
         initDroppedMarker(style);
         List<String> dummySafeZones = new ArrayList<String>();
         dummySafeZones.add("33.409460#-111.917743#Murietta Open Space");
-        dummySafeZones.add("33.416458#-111.932106#SDFC Field");
+//        dummySafeZones.add("33.416458#-111.932106#SDFC Field");
         dummySafeZones.add("33.423703#-111.922631#passport office");
         dummySafeZones.add("33.419710#-111.913364#Creamery park");
         // create symbol manager object
